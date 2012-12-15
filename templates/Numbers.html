@@ -1,0 +1,21 @@
+<table id="nubmersTable">
+	{% for val in table %}
+
+	{% if forloop.first %}
+			<tr><td>{{val}}</td>
+	{%else%} 
+	{% if forloop.last%}
+		<td>{{val}}</td></tr>
+	{%else%}
+	{% if forloop.counter|divisibleby:"5"%}
+	<td>{{val}}</td></tr><tr>
+	{% else %}
+	<td>{{val}}</td>
+		
+	{% endif %}
+	{% endif %} 
+	{% endif %} 
+	
+		
+	{% endfor %}
+</table>

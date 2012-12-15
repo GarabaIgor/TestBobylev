@@ -1,0 +1,93 @@
+/*<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">*/
+table
+{
+	/*width: 35em;*/
+	/*height: 35em;*/
+	margin-top: 0em;
+
+	vertical-align: middle;
+	border: none;
+	table-layout:fixed;
+
+	/*font-size: 6pt;*/
+	
+}
+body
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+td
+{
+	/*border: 2px solid black;*/
+	text-align: center;
+	font-size: 1.4em;
+	cursor:pointer;
+	padding-left: 0.45em;
+	padding-right: 0.45em;
+	padding-bottom: 0.25em;
+	padding-top: 0.25em;
+}
+#selected
+{
+	background-color: 95caff;
+}
+#selected2
+{
+	background-color: 95ff95;
+}
+#selected_mistake
+{
+	background-color: ff9595;
+}
+.page-content
+{
+	width: 876px;
+}
+.special_href
+{
+	font-size: 14;
+	text-decoration: underline;
+	
+}
+.top_left_corner
+{
+	float: left;
+	padding-top: 2em;
+	padding-left:2em;
+	
+}
+.page-content
+{
+	text-align: justify;
+	float: left;
+
+
+}
+
+#exercise_zone
+{
+	
+	padding-top: 0em;
+}
+
+.check_table
+{
+	text-align:center;
+	margin-top: 1em;
+	width: 800px;
+	margin-bottom: 2em
+}
+
+
+.span9
+{
+	
+}
+
+.background-color-green { background-color: green; }​

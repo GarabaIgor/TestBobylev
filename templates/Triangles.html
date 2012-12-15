@@ -1,0 +1,30 @@
+
+<table id="trianglesTable">
+	{% for val in imgs_to_find %}
+	{% if forloop.first %}
+			<tr><td><img src="{{val}}"></td>
+	{%else%} 
+	{% if forloop.last%}
+		<td><img src="{{val}}"></td></tr>
+	{%else%}
+	{% if forloop.counter|divisibleby:"2"%}
+	<td><img src="{{val}}"></td></tr><tr>
+	{% else %}
+	<td><img src="{{val}}"></td>
+		
+	{% endif %}
+	{% endif %} 
+	{% endif %} 
+	
+	{% endfor %}
+</table>
+
+
+
+	{% for val in table %}
+
+	
+	
+		
+	{% endfor %}
+</table>
