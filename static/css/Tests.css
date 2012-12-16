@@ -1,0 +1,27 @@
+#trianglesTable
+{
+
+	/*width: 30em;
+	height: 30em;*/
+	/*vertical-align: middle;*/
+	border-collapse: collapse;
+	table-layout:fixed;
+	margin-top: 1em;
+	margin: auto;
+	
+}
+
+#trianglesTable  td
+{
+	border: 2px solid black;
+	text-align: center;
+	cursor:pointer;
+	-webkit-transition:background 0.3s;
+
+
+}
+
+.selected
+{
+	background-color: blue;
+}

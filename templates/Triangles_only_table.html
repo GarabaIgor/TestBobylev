@@ -1,9 +1,4 @@
-{% extends 'Base.html' %}
-{% block links %}
-<script src="{{STATIC_URL}}Triangles.js"></script>	
-{% endblock links %}
-
-{% block content %}			
+		
 		
 <table id="trianglesTable">
 	{% for val in result_list %}
@@ -13,7 +8,7 @@
 	{% if forloop.last%}
 		<td id="{{val.1}}"><img src="{{val.0}}" ></td></tr>
 	{%else%}
-	{% if forloop.counter|divisibleby:"3"%}
+	{% if forloop.counter|divisibleby:"6"%}
 	<td id="{{val.1}}"><img src="{{val.0}}" ></td></tr><tr>
 	{% else %}
 	<td id="{{val.1}}"><img src="{{val.0}}" ></td>
@@ -24,4 +19,4 @@
 	
 	{% endfor %}
 </table>
-{% endblock content %}
+

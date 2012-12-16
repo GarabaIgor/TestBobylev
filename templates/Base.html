@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+	<script src="{{STATIC_URL}}jquery-1.8.2.js"></script>
+	<script src="{{STATIC_URL}}Timer.js"></script>
+	<script src="{{STATIC_URL}}csrf.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}Tests.css" />
+
+	{% block links %}
+		
+	{% endblock links %}
+
+</head>
+<body>
+	<div id="timer">timer</div>
+	<div id="content">
+		{% block content %}
+
+		{% endblock content %}
+ 	</div>
+</body>
+
+</html>

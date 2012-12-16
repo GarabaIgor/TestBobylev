@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+
+
+{% block content %}			
+		
+<table id="trianglesTable">
+	{% for val in result_list %}
+	{% if forloop.first %}
+			<tr><td><img src="{{val.0}}" id="{{val.1}}"></td>
+	{%else%} 
+	{% if forloop.last%}
+		<td><img src="{{val.0}}" id="{{val.1}}"></td></tr>
+	{%else%}
+	{% if forloop.counter|divisibleby:"2"%}
+	<td><img src="{{val.0}}" id="{{val.1}}"></td></tr><tr>
+	{% else %}
+	<td><img src="{{val.0}}" id="{{val.1}}"></td>
+		
+	{% endif %}
+	{% endif %} 
+	{% endif %} 
+	
+	{% endfor %}
+</table>
+{% endblock content %}

@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 	(r'^admin/',include(admin.site.urls)),
     (r'^numbers/$',views.numbers),
     (r'^triangles/$',views.triangles),
+    (r'^triangles_results/$',views.triangles_results),
 )
